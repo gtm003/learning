@@ -1,11 +1,13 @@
 import React from 'react';
 import { ROUTES } from '../../constants/routes';
-import './Header.css'
+import { NavItem } from '../NavItem/NavItem';
+import styles from './Header.module.scss'
 
 export const Header = () => {
   return (
-    <div className='Header'>
-        {Object.values(ROUTES).map(page => <a key={page.path} href={page.path}>{page.name}</a>)}
+    <div className={styles.Header}>
+      <div className={styles.Header_Logo} />
+        {Object.values(ROUTES).map(page => <NavItem name={page.name} path={page.path} />)}
     </div>
   );
 }
