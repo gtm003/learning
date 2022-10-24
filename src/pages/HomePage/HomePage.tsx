@@ -1,4 +1,7 @@
 import React from "react";
+import { NavItem } from "../../components/NavItem/NavItem";
+import { ROUTES } from "../../constants/routes";
+import styles from "./HomePage.module.scss";
 
 const TOPICS = [
   "Module #1: Software Engineering",
@@ -9,13 +12,10 @@ const TOPICS = [
 
 export const HomePage = () => {
   return (
-    <div>
-      Home Page
-      <ul>
-        {TOPICS.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+    <div className={styles.HomePage}>
+      {Object.values(ROUTES).map((page) => (
+        <NavItem key={page.name} name={page.name} path={page.path} />
+      ))}
     </div>
   );
 };

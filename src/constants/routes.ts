@@ -1,6 +1,6 @@
 export enum Pages {
     HOME = 'Home',
-    POSITION = 'Position'
+    SOFTWARE_ENGINEERING = 'Software Engineering',
 };
 
 export interface RouteProps {
@@ -13,8 +13,8 @@ export const ROUTES: { [key in Pages]: RouteProps } = {
     name: Pages.HOME,
     path: "/",
   },
-  [Pages.POSITION]: {
-    name: Pages.POSITION,
-    path: "/position",
+  [Pages.SOFTWARE_ENGINEERING]: {
+    name: Pages.SOFTWARE_ENGINEERING,
+    path: "/software_engineering",
   },
 };
