@@ -2,6 +2,7 @@ import React from "react";
 import { NavItem } from "../../components/NavItem/NavItem";
 import { ROUTES } from "../../constants/routes";
 import styles from "./HomePage.module.scss";
+import { FilesUploader } from "../../components/FilesUploader/FilesUploader";
 
 const TOPICS = [
   "Module #1: Software Engineering",
