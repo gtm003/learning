@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <div className={styles.Header}>
       <div className={styles.Header_Logo} />
-        {Object.values(ROUTES).map(page => <NavItem name={page.name} path={page.path} />)}
+      <NavItem name='home' path='/' />
     </div>
   );
 }

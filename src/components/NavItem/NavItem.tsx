@@ -8,7 +8,7 @@ export interface INavItemProps {
 
 export const NavItem = ({ name, path }: INavItemProps) => {
   return (
-    <a key={path} href={path} className={styles.NavItem}>
+    <a href={path} className={styles.NavItem}>
       {name}
     </a>
   );
