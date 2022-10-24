@@ -1,4 +1,5 @@
 import React from "react";
+import { FilesUploader } from "../../components/FilesUploader/FilesUploader";
 
 const TOPICS = [
   "Module #1: Software Engineering",
@@ -16,6 +17,7 @@ export const HomePage = () => {
           <li key={index}>{item}</li>
         ))}
       </ul>
+      <FilesUploader />
     </div>
   );
 };

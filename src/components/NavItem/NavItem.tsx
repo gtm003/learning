@@ -1,5 +1,4 @@
 import React from "react";
-import { ROUTES } from "../../constants/routes";
 import styles from "./NavItem.module.scss";
 
 export interface INavItemProps {
