@@ -1,0 +1,20 @@
+@import '../../../../styles/mixin.scss';
+
+.Algorithms {
+  .Example {
+    display: flex;
+
+    &_item {
+      @include box(30px, 30px);
+      @include centerContent;
+      border: 1px solid gray;
+      border-radius: 5px;
+      margin: 0.2rem;
+
+      &__highlighted {
+        background: wheat;
+        font-weight: 600;
+      }
+    }
+  }
+}
