@@ -1,6 +1,7 @@
 export enum Pages {
     HOME = 'Home',
     SOFTWARE_ENGINEERING = 'Software Engineering',
+    JAVA_SCRIPT = 'JavaScript',
 };
 
 export interface RouteProps {
@@ -16,5 +17,9 @@ export const ROUTES: { [key in Pages]: RouteProps } = {
   [Pages.SOFTWARE_ENGINEERING]: {
     name: Pages.SOFTWARE_ENGINEERING,
     path: "/software_engineering",
+  },
+  [Pages.JAVA_SCRIPT]: {
+    name: Pages.JAVA_SCRIPT,
+    path: "/javascript",
   },
 };

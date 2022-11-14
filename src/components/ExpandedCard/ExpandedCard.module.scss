@@ -1,0 +1,11 @@
+.ExpandedCard {
+  cursor: pointer;
+  &_title {
+    font-weight: 600;
+  }
+  &_content {
+    &__hidden {
+      display: none;
+    }
+  }
+}
